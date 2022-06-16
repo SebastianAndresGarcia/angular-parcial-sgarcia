@@ -1,0 +1,24 @@
+
+.row {
+    text-align: justify;
+    align-items: center;
+    /**verticalmente */
+    display: flex;
+    margin-left: 0 auto;
+    padding-left: 25%;
+    padding-right: 25%;
+    /**para que achique el tamaño del contenido, agrega como un marco */
+  }
+  
+  .col {
+    justify-content: center;
+    text-align: justify;
+    margin-left: auto;
+  }
+  
+  .h4{
+    text-align: center;
+    color: rgb(143, 4, 4);
+    padding-bottom: 50px;
+  }
+  

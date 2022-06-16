@@ -1,0 +1,30 @@
+<button class="btn btn-outline-success" style="margin: 5px;" [routerLink]="['/formulario', 0]">Agregar
+    Nuevo</button>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">URL image</th>
+            <th scope="col">textCaption</th>
+            <th scope="col">descripcion imagen</th>
+            <th scope="col">ordenSlider</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let banner of bannerArr">
+            <td>{{banner.id}}</td>
+            <td>{{banner.urlImageBanner}}</td>
+            <td>{{banner.textCaption}}</td>
+            <td>{{banner.descripcionImagen}}</td>
+            <td>{{banner.ordenSlider}}</td>
+            <td><button [routerLink]="['/formulario', banner.id]">Modificar</button></td>
+            <td><button (click)="delete(banner.id)">Eliminar</button></td>
+
+        </tr>
+
+    </tbody>
+</table>

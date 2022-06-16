@@ -1,0 +1,27 @@
+<div class="card bg-dark text-white">
+ <!--<div class="img"> <img src="assets/images/imageneshome.jpg" class="card-img" alt="imageninicio" ></div>-->
+  <div class="card-img-overlay">
+    <div class="row" align="center" justify="center">
+      <div class="col">
+        
+        <h4 style="text-align: center">
+          <button style="text-align: center" class="btn btn-outline-danger btn-block" [routerLink]="['/formulario', 0]">
+            Formulario
+          </button>
+        </h4>
+
+        <h4 style="text-align: center"  routerLinkActive="active">
+          <button class="btn btn-outline-danger btn-block" [routerLink]="['/tablecrud']">
+            Grilla
+          </button>
+        </h4>
+        <h4 style="text-align: center">
+          <button class="btn btn-outline-danger btn-block" [routerLink]="['/demobanner']">
+            DemoBanner
+          </button>
+        </h4>
+        
+      </div>
+    </div>
+  </div>
+</div>

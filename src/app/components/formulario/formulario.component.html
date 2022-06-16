@@ -1,0 +1,40 @@
+<h3>Banners <small>{{ bann.textCaption }}</small></h3>
+<div class="button" >
+  <div class="col" align="center" justify="center">  
+    <button class="btn btn-outline-danger" style="margin-right: 5px;" [routerLink]="['/tablecrud']">Grilla</button>
+    
+</div>
+<hr>
+
+<div class="row" style="padding-left: 30%; padding-right: 30%; padding-top:1%; padding-bottom: 1%;">
+    <div class="col"  justify="center">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+            <div class="form-group">
+                <label for="url">URL</label>
+                <input id="url" [(ngModel)]="bann.urlImageBanner" name="url" class="form-control" required
+                    minlength="4" placeholder="url">
+            </div>
+            <div class="form-group">
+                <label for="textCaption">textCaption</label>
+                <input id="textCaption" type="text" [(ngModel)]="bann.textCaption" name="textCaption" class="form-control" required
+                    minlength="4" placeholder="textCaption">
+            </div>
+            <div class="form-group">
+                <label for="descripcionImagen">descripcionImagen</label>
+                <input id="descripcionImagen" [(ngModel)]="bann.descripcionImagen" name="descripcionImagen" class="form-control" required minlength="4"
+                    placeholder="descripcionImagen">
+            </div>
+            <div class="form-group">
+                <label for="ordenSlider">ordenSlider</label>
+                <input id="ordenSlider" [(ngModel)]="bann.ordenSlider" name="ordenSlider" class="form-control" required minlength="4"
+                    placeholder="ordenSlider">
+            </div>
+            
+            <div class="form-group" style="padding-top: 1%;">
+                <button type="button" class="btn btn-outline-primary" (click)="guardar()">Guardar Banner</button>
+
+                <span style="text-align: right; width: 500; color: blue; font-weight: bold;">&nbsp;&nbsp;&nbsp; </span>
+            </div>
+        </form>
+    </div>
+</div>

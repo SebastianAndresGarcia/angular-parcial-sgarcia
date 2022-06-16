@@ -1,0 +1,24 @@
+<div id="kiko-slider">
+
+    <ul class="slider" *ngFor="let banner of bannerArr">
+        <li id="slide1">
+            <h1>{{banner.textCaption}}</h1>
+            <h3>{{banner.descripcionImagen}}</h3>
+            <img src="{{banner.urlImageBanner}}" />
+        </li>
+
+    </ul>
+
+    <ul class="menu">
+        <li>
+            <a href="#slide1">1</a>
+        </li>
+        <li>
+            <a href="#slide2">2</a>
+        </li>
+        <li>
+            <a href="#slide3">3</a>
+        </li>
+    </ul>
+
+</div>
